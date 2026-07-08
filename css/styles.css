@@ -404,11 +404,27 @@ code {
   min-height: calc(100vh - 92px);
   overflow: auto;
   touch-action: none;
+  cursor: grab;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   background:
     linear-gradient(rgba(38, 49, 43, 0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(38, 49, 43, 0.06) 1px, transparent 1px),
     radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.54), transparent 35rem);
   background-size: 32px 32px, 32px 32px, auto;
+}
+
+.board.is-panning {
+  cursor: grabbing;
+}
+
+.board-spacer {
+  position: absolute;
+  inset: 0 auto auto 0;
+  z-index: 0;
+  width: max(1700px, 220vw);
+  height: max(1100px, 180vh);
+  pointer-events: none;
 }
 
 .demo-board {
@@ -436,6 +452,7 @@ code {
 
 .note {
   position: absolute;
+  z-index: 1;
   display: grid;
   grid-template-rows: auto 1fr;
   min-width: 120px;

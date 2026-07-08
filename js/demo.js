@@ -1,4 +1,5 @@
 import { generateId } from './config.js';
+import { enableBoardPan } from './board-pan.js';
 
 const STORAGE_KEY = 'classboard.demo.notes.v1';
 const COLORS = ['yellow', 'pink', 'blue', 'green', 'purple', 'orange'];
@@ -50,6 +51,7 @@ let maxZIndex = 1;
 boot();
 
 function boot() {
+  enableBoardPan(board);
   addNoteButton.addEventListener('click', createNote);
   resetDemoButton.addEventListener('click', resetDemo);
 
