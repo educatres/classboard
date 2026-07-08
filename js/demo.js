@@ -1,6 +1,6 @@
 import { generateId } from './config.js';
 import { enableBoardPan } from './board-pan.js';
-import { enableToolbarMenu } from './toolbar-menu.js';
+import { enableUiVisibility } from './ui-visibility.js';
 
 const STORAGE_KEY = 'classboard.demo.notes.v1';
 const COLORS = ['yellow', 'pink', 'blue', 'green', 'purple', 'orange'];
@@ -53,7 +53,7 @@ boot();
 
 function boot() {
   enableBoardPan(board);
-  enableToolbarMenu(document);
+  enableUiVisibility(document);
   addNoteButton.addEventListener('click', createNote);
   resetDemoButton.addEventListener('click', resetDemo);
 

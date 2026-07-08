@@ -15,21 +15,15 @@
 
     <main id="board-app" class="board-app hidden">
       <header class="toolbar">
-        <div class="toolbar-title-row">
-          <div class="toolbar-title">
-            <p class="eyebrow">匿名協作白板</p>
-            <h1>公用便條貼白板</h1>
-          </div>
-          <button class="primary-btn add-note-btn" id="add-note" type="button" aria-label="新增便條貼">
-            <span class="add-note-label">新增便條貼</span>
-            <span class="add-note-plus" aria-hidden="true">+</span>
-          </button>
-          <button class="toolbar-menu-toggle" type="button" aria-label="開啟工具選單" aria-expanded="false" aria-controls="board-toolbar-menu" data-toolbar-menu-toggle>☰</button>
+        <div class="toolbar-title">
+          <p class="eyebrow">匿名協作白板</p>
+          <h1>公用便條貼白板</h1>
         </div>
-        <div class="toolbar-actions toolbar-menu" id="board-toolbar-menu" data-toolbar-menu>
+        <div class="toolbar-actions">
           <button class="ghost-btn" id="refresh-board" type="button">重新同步</button>
           <span id="sync-status" class="sync-pill">尚未同步</span>
           <span id="note-count" class="sync-pill">0 張</span>
+          <button class="ghost-btn hide-ui-btn" type="button" data-hide-ui>隱藏介面</button>
         </div>
       </header>
 
@@ -37,9 +31,12 @@
         <div class="board-spacer" aria-hidden="true"></div>
         <div class="empty-state" id="empty-state">
           <h2>這裡還沒有便條貼</h2>
-          <p>按「新增便條貼」開始，或等待其他同學送出想法。</p>
+          <p>按右下角的 + 開始，或等待其他同學送出想法。</p>
         </div>
       </section>
+
+      <button class="floating-add-note" id="add-note" type="button" aria-label="新增便條貼">+</button>
+      <button class="show-ui-btn" type="button" data-show-ui>顯示</button>
     </main>
 
     <template id="note-template">

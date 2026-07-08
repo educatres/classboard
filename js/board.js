@@ -3,7 +3,7 @@ import { submitEvent } from './google-form.js';
 import { fetchSheetEvents } from './google-sheet.js';
 import { reduceEventsToNotes } from './note-store.js';
 import { enableBoardPan } from './board-pan.js';
-import { enableToolbarMenu } from './toolbar-menu.js';
+import { enableUiVisibility } from './ui-visibility.js';
 
 const SYNC_INTERVAL_MS = 5000;
 const DEFAULT_NOTE = { width: 180, height: 120, color: 'yellow' };
@@ -36,7 +36,7 @@ if (!parsed.ok) {
 
 function boot() {
   enableBoardPan(board);
-  enableToolbarMenu(boardApp);
+  enableUiVisibility(boardApp);
   addNoteButton.addEventListener('click', createNote);
   refreshButton.addEventListener('click', () => syncFromSheet({ manual: true }));
   syncFromSheet();
