@@ -205,6 +205,42 @@ select:focus {
   grid-column: 1 / -1;
 }
 
+.prefill-helper {
+  margin-bottom: 18px;
+  padding: 18px;
+  border: 1px solid rgba(36, 107, 85, 0.16);
+  border-radius: 22px;
+  background: rgba(216, 240, 220, 0.34);
+}
+
+.prefill-helper p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.inline-actions {
+  margin-top: 0;
+}
+
+.advanced-fields {
+  margin-top: 16px;
+  border: 1px dashed rgba(107, 91, 59, 0.3);
+  border-radius: 20px;
+  background: rgba(255, 253, 247, 0.58);
+}
+
+.advanced-fields summary {
+  cursor: pointer;
+  padding: 16px 18px;
+  color: var(--accent-strong);
+  font-weight: 900;
+}
+
+.advanced-fields .entry-grid {
+  padding: 0 18px 18px;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;

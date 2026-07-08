@@ -53,17 +53,17 @@
 
 Google Form 送出後，請將回應連結到 Google Sheet。
 
-## 取得 entry ID
+## 最簡單取得 entry ID
 
-每個 Google Form 欄位都會有一個 `entry.xxxxx`。常見取得方式：
+每個 Google Form 欄位都會有一個 `entry.xxxxx`。設定頁支援從預填連結自動帶入，不需要逐格手填：
 
 1. 打開 Google Form。
 2. 使用「取得預填連結」。
-3. 每個欄位填入容易辨識的文字，例如 `board_id_test`。
+3. 每個欄位填入對應欄位名稱，例如 `board_id`、`note_id`、`action`、`text`。
 4. 複製產生的預填連結。
-5. 在網址中找到對應的 `entry.xxxxx=board_id_test`。
+5. 貼到設定頁 Step 2，按「從預填連結自動帶入」。
 
-老師設定頁需要填入每個欄位的 `entry.xxxxx`。
+如果自動帶入失敗，也可以展開「進階：手動檢查或修改 entry ID」自行填入。
 
 ## Google Sheet 權限
 
