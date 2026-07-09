@@ -2,6 +2,8 @@
 
 這是一個可部署在 GitHub Pages 的匿名便條貼白板。它不需要後端、不需要登入，使用 Google Form 寫入事件紀錄，並從公開 Google Sheet 讀取資料還原目前白板狀態。
 
+![簡介圖](簡介圖.png)
+
 ## 功能
 
 - 可直接試玩的展示頁：`demo.html`，資料保存在瀏覽器 localStorage。
