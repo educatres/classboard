@@ -98,7 +98,7 @@ h2 {
 
 .hero-image {
   display: block;
-  width: min(100%, 920px);
+  width: 100%;
   height: auto;
   margin-top: 28px;
   border: 1px solid rgba(107, 91, 59, 0.16);
