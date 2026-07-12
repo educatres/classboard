@@ -4,8 +4,8 @@
 
 ## 線上使用
 
-- 直接使用的 demo 試玩版網址：https://chichingleetw.github.io/classboard/demo.html
-- 直接使用的網址：https://chichingleetw.github.io/classboard/index.html
+- 直接使用的 demo 試玩版網址：https://educatres.github.io/classboard/demo.html
+- 直接使用的網址：https://educatres.github.io/classboard/index.html
 
 ![簡介圖](簡介圖.png)
 
